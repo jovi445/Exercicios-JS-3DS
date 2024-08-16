@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/math_3655612.png" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="Calculadora">
+        <h1>Calculadora do Suriel</h1>
+        <img src="Imagens/math_3655612.png" alt="">
+        <p><input type="text" name="Primeiro Número" id="num1"></p>
+        <p><input type="text" name="Segundo Número" id="num2"></p>
+        <p>
+            <input type="button" value="Somar" onclick="Clicar('somar')">
+            <input type="button" value="Subtrair" onclick="Clicar('subtrair')">
+            <input type="button" value="Multiplicar" onclick="Clicar('multiplicar')">
+            <input type="button" value="Dividir" onclick="Clicar('dividir')">
+        </p>
+        <p id="res"></p>
+        <script>
+            function Clicar(operacao){
+                var n1 = parseFloat(document.getElementById('num1').value);
+                var n2 = parseFloat(document.getElementById('num2').value);
+                var resultado = document.getElementById('res');
+                var s;
+
+                switch(operacao){
+                    case 'somar':
+                        s = n1 + n2;
+                        break;
+                    case 'subtrair':
+                        s = n1 - n2;
+                        break;
+                    case 'multiplicar':
+                        s = n1 * n2;
+                        break;
+                    case 'dividir':
+                        if(n2 != 0){
+                            s = n1 / n2;
+                        } else {
+                            s = 'Erro: Divisão por zero!';
+                        }
+                        break;
+                    default:
+                        s = 'Erro: Operação inválida!';
+                }
+
+                resultado.innerText = 'O seu resultado é ' + s;
+            }
+        </script>
+    </div>
+    <style>
+        .Calculadora {
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            max-width: 50rem;
+            color: white;
+        }
+        body {
+            background-image: -moz-linear-gradient(to right, darkgreen, greenyellow);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input {
+            box-shadow: 3px 3px 3px rgb(0, 47, 0);
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 3px rgb(0, 47, 0);        
+        }
+        p {
+            color: white;
+            text-shadow: 3px 3px 3px rgb(0, 47, 0);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.texto_Centralizado {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 50rem;
+    color: white;
+}
+
+body {
+    background-image: -moz-linear-gradient(to right, green, yellowgreen);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    box-shadow: 3px 3px 3px rgb(0, 47, 0);
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 47, 0);        
+}
+p {
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 47, 0);
+}

@@ -1,0 +1,31 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar se um número é divisível por 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto_Centralizado">
+        <h1>Verificar se um número é divisível por 2</h1>
+        <input type="number" id="numero" placeholder="Digite um número">
+        <button onclick="verificarDivisibilidade()">Verificar</button>
+  <p id="resultado"></p>
+
+
+    </div>
+<!-- JavaScript -->
+  <script>
+    function verificarDivisibilidade() {
+      const numero = document.getElementById("numero").value;
+      const resultado = document.getElementById("resultado");
+
+      if (numero % 2 === 0) {
+        resultado.textContent = `O número ${numero} é divisível por 2!`;
+      } else {
+        resultado.textContent = `O número ${numero} não é divisível por 2.`;
+      }
+    }
+  </script>
+</body>
+</html>
