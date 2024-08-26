@@ -1,0 +1,11 @@
+.texto_Centralizado {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 50rem;
+    color: white;
+}
+
+body {
+    background-color: purple;
+}
