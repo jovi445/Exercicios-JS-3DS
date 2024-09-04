@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Modeseven;
+    src: url(Fontes/Modeseven-L3n5.ttf);
+}
+
+.texto_Centralizado {
+    font-family: Modeseven;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 50rem;
+    color: white;
+}
+
+.imagem_Perfil {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 5px solid;
+}
+
+body {
+    background-image: -moz-linear-gradient(to right, #dd4814, #77216f);
+}
+
+a {
+    display: inline-block;
+}
